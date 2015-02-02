@@ -60,15 +60,26 @@ consider the following : h2.open + article { display:block; }
             content: '\2797';
         }
     <style>
+
+
 /* JS from class as notes reference */
+
 <script>
 
 function click() {
     console.log("Hello")
     document.getElementById('work').style.display = "block";
+    debugger;
 }
+
+var h2s = document.getElementsByTagName('h2');
+
+for ( var index = 0; index < h2s.length; index++ ) {
+    h2s[index];
+    debugger;
 }
 </script>
+
 
       /*  <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -76,9 +87,9 @@ function click() {
 */
 
 
-        <h2 class="open"><a href>Heading2</a></h2>
+        <h2 onclick="showMe"><a href>Heading2</a></h2>
         
-<article class="open">
+<article id="work">
         <p class="open">Hello world! This is HTML5 Boilerplate.</p>
 </article>
 
