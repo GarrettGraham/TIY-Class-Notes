@@ -1,0 +1,15 @@
+git remote show origin -- shows the details of the remote repo
+
+example of downloading something through the terminal to then be distributed globally accross the computer to avoid just downloading something into a specific rep 
+
+	---> like what happened with yo h5bp, which was downloaded in one repo but because it wasnt globally distributed through the terminal command, one would have to download said yo generator into each specified repo
+
+	Example:
+	
+		```
+		npm install -g yo generator-h5bp
+
+			or
+
+		npm install --global yo generator-h5bp
+		```
