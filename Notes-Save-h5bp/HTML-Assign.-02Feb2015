@@ -41,4 +41,12 @@ everything that is an html element is a Node -- everything in the tree is a Node
 
 Understand the 'this' keyword in JavaScript
 
+
 What is an event handler?? like onclick?
+
+
+if you dont define a value you a href as in the url for the link, the a href essentially reloads the webpage because it infers that the author meant that the url for the a href link is the url of the current page
+
+
+
+Functional Binding
