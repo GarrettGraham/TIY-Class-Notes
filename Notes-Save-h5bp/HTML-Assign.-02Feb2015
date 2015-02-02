@@ -15,3 +15,9 @@ h2 > a {
  <h2><a href>Oat Tootsie</a></h2> <!-- the a href only needs to be closed if dont have the URL-->
 
  <p>paragraph text in detail....</p>
+
+
+
+!!Research!!
+	
+	document.getElementById() vs. document.getElementsByTagName()  
