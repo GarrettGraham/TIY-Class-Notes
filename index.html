@@ -28,6 +28,7 @@
         h2 > a:before {
                 content:'\2799';
                 padding-right: 0.5em;
+                color:grey;
                 display:inline-block;
                 width:1em;
             }
@@ -37,20 +38,55 @@
                 color: blue;
                 }
 
+
+/* use article tags for the paragraphs to help styling confusion
+
         p {
             display: none;
-            }
+            }*/
+/* plus + article -- Reserarch -- see below as reference
 
+consider the following : h2.open + article { display:block; }
+*/
+        h2 + article {
+            display:none;
+        }
+
+        .open {
+            display:block;
+        }
+
+        h2.open > a:before {
+            content: '\2797';
+        }
     <style>
+/* JS from class as notes reference */
+<script>
 
+function click() {
+    console.log("Hello")
+    document.getElementById('work').style.display = "block";
+}
+}
+</script>
 
-        <!--[if lt IE 7]>
+      /*  <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+*/
 
-        <!-- Add your site or application content here -->
-        <h2><a href>Heading2</a></h2>
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        <h2 class="open"><a href>Heading2</a></h2>
+        
+<article class="open">
+        <p class="open">Hello world! This is HTML5 Boilerplate.</p>
+</article>
+
+        <h2 /*class="open"*/><a href>Heading2</a></h2>
+        <p /*class="open"*/>Hello world! This is HTML5 Boilerplate.</p>
+        
+
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
