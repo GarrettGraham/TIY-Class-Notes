@@ -5,7 +5,7 @@ example of downloading something through the terminal to then be distributed glo
 	---> like what happened with yo h5bp, which was downloaded in one repo but because it wasnt globally distributed through the terminal command, one would have to download said yo generator into each specified repo
 
 	Example:
-	
+
 		```
 		npm install -g yo generator-h5bp
 
@@ -13,3 +13,8 @@ example of downloading something through the terminal to then be distributed glo
 
 		npm install --global yo generator-h5bp
 		```
+
+Apply styles 'on-click' in JavaScript 
+
+
+!!! Reference the index.html in this repo to see how the JS is written within the html file !!!

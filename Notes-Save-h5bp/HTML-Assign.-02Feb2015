@@ -1,0 +1,17 @@
+<style>
+
+/*dont use list tags to recreate the blueprint*/
+
+h2 > a {
+}
+
+</style>
+
+<!-- the > identifies that the code will funnel to the specified elements nested within the parent element
+ 
+ the h2 > a between the style tags tell you that the code is going to be specified to only call the <a> tags within that specific <h2> tags or all of the h2 tags in the document unless otherwise specified
+ -->
+
+ <h2><a href>Oat Tootsie</a></h2> <!-- the a href only needs to be closed if dont have the URL-->
+
+ <p>paragraph text in detail....</p>

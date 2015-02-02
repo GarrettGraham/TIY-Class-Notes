@@ -1,0 +1,53 @@
+
+/*
+!!! Need to Research and understand the key words in the 
+property designations and how they render the styling !!!
+*/
+
+
+h2 > a:before {
+	content: '\2799';
+}
+
+	vs.
+
+h2 > a :before{
+	content: '\2799';
+}
+
+/*the arrrow in the above code will render in different 
+place depending on whether or not there is a 
+space between a and :before*/
+
+h2 > a {
+	text-decoration: none; /*Research text decoration property*/
+	color:blue;
+}
+
+h2 > a:before {
+	content:'\2799';
+	padding-right: 0.5em;
+	display:inline-block;
+	width:1em;
+}
+
+h2 > a:hover:before {
+	content:'\2798';
+	color: blue;
+	/*width:10px;*/
+	/* the width property causes issues with spacing when hovering over the arrow*/
+	}
+
+/*the hover element is now applied to the arrow and the heading itself
+you must write the unicode for changing the arrow orientation when 
+move curser over the arrow*/
+
+p {
+display: none;
+}
+
+
+
+h1:hidden {
+	display;
+}
