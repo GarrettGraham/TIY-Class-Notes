@@ -25,7 +25,7 @@ jQuery can be overkill when it has to do with load time
 jQuery('h2') is the same as document.querySelectorAll('h2')
 
 
-zepto.js --> dieted version of jQuery
+zepto.js --> slimmer version of jQuery
 
 
 jQuery binds that item to the function...'this' inside the function is an important key word
@@ -34,3 +34,20 @@ jQuery binds that item to the function...'this' inside the function is an import
 
 
 	jQuery allows for shorter syntax 
+
+
+	MUST know what the tool does and how best to use the tool
+
+		--> a few things in jQuery may be useful in mobile versions
+
+
+
+	TOOLS on TUESDAY
+
+npm install is for lodash
+
+npm is kind of an alternative to Bower.json
+
+npm is how we install node packages -- node is mostly for JS packages
+
+Bower.json --> 
