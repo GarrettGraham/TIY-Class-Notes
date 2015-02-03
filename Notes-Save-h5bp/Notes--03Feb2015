@@ -50,4 +50,11 @@ npm is kind of an alternative to Bower.json
 
 npm is how we install node packages -- node is mostly for JS packages
 
-Bower.json --> 
+Bower.json --> most widely used package manager for front end dependencies
+
+we will learn npm for back end dependencies
+
+manifest file: everything that should be in this or that package is in that package's manifest
+
+
+noglob: globs files together --> [$ ls Notes/*/*.md]  the stars are the globs of the files ALSO, [$ ls Notes/**/*.md]
