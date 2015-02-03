@@ -87,7 +87,7 @@ for ( var index = 0; index < h2s.length; index++ ) {
 */
 
 
-        <h2 onclick="showMe"><a href>Heading2</a></h2>
+        <h2 class=""><a href>Heading2</a></h2>
         
 <article id="work">
         <p class="open">Hello world! This is HTML5 Boilerplate.</p>
@@ -106,17 +106,30 @@ for ( var index = 0; index < h2s.length; index++ ) {
         <script src="js/main.js"></script>
 
         <script>
-        document.write("Hello World!")
 
         _.forEach(document.getElementsByTagName('h2'), function() {
             h2.onclick = function () {
+                event.preventDefault();
                 console.log(arguments);
-                h2.className ='open';
+
+                if ( h2 className == 'open') {
+                    console.log('close it');
+                    h2.className = '';
+                } else {
+                    //open it
+                    h2.className ='open';
+                }
             }
         });
 
         </script>
 
+        <script>
+
+        document.write("Hello World!")
+        
+        </script>
+        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
