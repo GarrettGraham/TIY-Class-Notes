@@ -16,6 +16,27 @@ h5bp already include the source code that allows the author to use jquery
 you use the jquery function instead of document.queryselector...
 
 
+
+
+	TOOLS on TUESDAY
+
+npm install is for lodash?? since lodash relates to JavaScript
+
+npm is kind of an alternative to Bower.json
+
+npm is how we install node packages -- node is mostly for JS packages
+
+Bower.json --> most widely used package manager for front end dependencies
+
+we will learn npm for back end dependencies
+
+manifest file: everything that should be in this or that package is in that package's manifest
+
+
+noglob: globs files together --> [$ ls Notes/*/*.md]  the stars are the globs of the files ALSO, [$ ls Notes/**/*.md]
+
+update command only performs itself incrementally
+
 jQuery: 
 
 load time is a big deal relative to using certain tools 
@@ -41,20 +62,21 @@ jQuery binds that item to the function...'this' inside the function is an import
 		--> a few things in jQuery may be useful in mobile versions
 
 
+What is an event handler?? like onclick?
 
-	TOOLS on TUESDAY
-
-npm install is for lodash
-
-npm is kind of an alternative to Bower.json
-
-npm is how we install node packages -- node is mostly for JS packages
-
-Bower.json --> most widely used package manager for front end dependencies
-
-we will learn npm for back end dependencies
-
-manifest file: everything that should be in this or that package is in that package's manifest
+there is a robot written in JS which smashes all the library files into one file --> bundled up into a distribution
 
 
-noglob: globs files together --> [$ ls Notes/*/*.md]  the stars are the globs of the files ALSO, [$ ls Notes/**/*.md]
+bower.json records where is the file it should include
+
+WIREDEP
+	
+	will look for html comments and insert between those comments the appropriate script and css tags
+
+	Wiredep needs to know where to wire the dependencies
+
+Every new project needs a bower.json file in order to track progress and automatically save payload
+
+initially do : $ Bower init
+
+bootstrap has javascript and 
