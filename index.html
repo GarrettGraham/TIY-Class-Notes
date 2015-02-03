@@ -110,13 +110,15 @@ for ( var index = 0; index < h2s.length; index++ ) {
         _.forEach(document.getElementsByTagName('h2'), function() {
             h2.onclick = function () {
                 event.preventDefault();
+                var class = h2.className.split(' ');
                 console.log(arguments);
 
-                if ( h2 className == 'open') {
+                if ( classes.indexof == 'open') {
                     console.log('close it');
                     h2.className = '';
                 } else {
                     //open it
+                    console.log('open it')
                     h2.className ='open';
                 }
             }
