@@ -1,0 +1,28 @@
+in JS: 
+
+null, boolean, number and string
+
+
+
+string.prototype.split -->
+
+
+classList
+
+what is polyfill?
+
+h5bp already include the source code that allows the author to use jquery
+
+you use the jquery function instead of document.queryselector...
+
+
+jQuery: 
+
+load time is a big deal relative to using certain tools 
+jQuery can be overkill when it has to do with load time
+
+
+jQuery('h2') is the same as document.querySelectorAll('h2')
+
+
+zepto.js --> dieted version of jQuery

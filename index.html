@@ -106,8 +106,11 @@ for ( var index = 0; index < h2s.length; index++ ) {
         <script src="js/main.js"></script>
 
         <script>
-
-        _.forEach(document.getElementsByTagName('h2'), function() {
+        jQuery('h2').each(function) {
+            console.log(arguments);
+            // all that stuff
+        });
+        _.forEach(document.querySelectorAll('h2'), function() {
             h2.onclick = function () {
                 event.preventDefault();
                 var class = h2.className.split(' ');
