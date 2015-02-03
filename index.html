@@ -106,10 +106,18 @@ for ( var index = 0; index < h2s.length; index++ ) {
         <script src="js/main.js"></script>
 
         <script>
-        jQuery('h2').each(function) {
-            console.log(arguments);
-            // all that stuff
+        jQuery('h2').on('click', function(event) {
+            console.log('arguments to "click" handler:'', arguments);
+            console.log('this inside "click" handler:'', article);
+            event.preventDefault();
         });
+
+        jQuery('h2').each(function(index, h2)) {
+            h2.onclick = function(event) {
+                event.preventDefault();
+            }
+        });
+
         _.forEach(document.querySelectorAll('h2'), function() {
             h2.onclick = function () {
                 event.preventDefault();

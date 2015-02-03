@@ -26,3 +26,11 @@ jQuery('h2') is the same as document.querySelectorAll('h2')
 
 
 zepto.js --> dieted version of jQuery
+
+
+jQuery binds that item to the function...'this' inside the function is an important key word
+
+		-->explicit [(item, index, all)] vs. implicit  
+
+
+	jQuery allows for shorter syntax 
