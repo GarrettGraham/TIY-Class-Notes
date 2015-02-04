@@ -25,7 +25,7 @@
       }
         .tabs {
             font-size: 1.5em;
-        text-align: center;
+            text-align: center;
         }
 
         .tabs > a {
@@ -69,9 +69,11 @@
     </style>
 
 
-    <div class="container">
+    <div class="container-fluid"> 
+        <!-- ??does the fluid make a difference or is this just to name the div appropriately so as to be called in CSS??-->
+        
         <nav class="tabs">
-            <a class="col-xs-3 icon icon-king" href> <span class="hidden-xs hidden-sm">King</span><a>
+            <a class="col-xs-3 icon icon-king active" href> <span class="hidden-xs hidden-sm">King</span><a>
             <a class="col-xs-3 icon icon-queen active" href> <span class="hidden-xs hidden-sm">Queen</span><a>
             <a class="col-xs-3 icon icon-knight" href> <span class="hidden-xs hidden-sm">Knight</span><a>
             <a class="col-xs-3 icon icon-rook" href> <span class="hidden-xs hidden-sm">Rook</span><a>
