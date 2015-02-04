@@ -11,144 +11,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        
-<!-- Bower:css -->
 
-<!-- Bower:css-->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-
+      
     <style>
 
-        h2 > a {
-                text-decoration: none;
-                color:blue;
-            }
-
-        h2 > a:before {
-                content:'\2799';
-                padding-right: 0.5em;
-                color:grey;
-                display:inline-block;
-                width:1em;
-            }
-
-        h2 > a:hover:before {
-                content:'\2798';
-                color: blue;
-                }
-
-
-/* use article tags for the paragraphs to help styling confusion
-
-        p {
-            display: none;
-            }*/
-/* plus + article -- Reserarch -- see below as reference
-
-consider the following : h2.open + article { display:block; }
-*/
-        h2 + article {
-            display:none;
+      body {
+        font-size: 10pt;
+      }
+        .tabs {
+            font-size: 1.5em;
+        text-align: center;
         }
 
-        .open {
-            display:block;
+        .tabs > a {
+            width:20%;
+            border:1px solid;
+            display:inline-block;
+            text-decoration: none;
+            
         }
 
-        h2.open > a:before {
-            content: '\2797';
+        .tabs > a:hover {
+            color:grey;
         }
-    <style>
+
+        .tabs > a.active {
+            border-bottom:none;
+            color: cornflowerblue;
+            border-top-width: 3px;
+        }
+
+        .icon:before {
+            font-size: 1.5em;
+        }
+
+        .icon-king:before {
+            content: '\265A'
+        }
+
+        .icon-queen{
+            content:'\265B';
+        }
+
+        .icon-knight{
+            content:'\265C';
+        }
+
+        .icon-rook{
+            content:'\265D';
+        }
+    
+    </style>
 
 
-/* JS from class as notes reference */
-
-<script>
-
-function click() {
-    console.log("Hello")
-    document.getElementById('work').style.display = "block";
-    debugger;
-}
-
-var h2s = document.getElementsByTagName('h2');
-
-for ( var index = 0; index < h2s.length; index++ ) {
-    h2s[index];
-    debugger;
-}
-</script>
-
-
-      /*  <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-*/
-
-
-        <h2 class=""><a href>Heading2</a></h2>
-        
-<article id="work">
-        <p class="open">Hello world! This is HTML5 Boilerplate.</p>
-</article>
-
-        <h2 /*class="open"*/><a href>Heading2</a></h2>
-        <p /*class="open"*/>Hello world! This is HTML5 Boilerplate.</p>
-        
-
+    <div class="container">
+        <nav class="tabs">
+            <a class="col-xs-3 icon icon-king" href> <span class="hidden-xs hidden-sm">King</span><a>
+            <a class="col-xs-3 icon icon-queen active" href> <span class="hidden-xs hidden-sm">Queen</span><a>
+            <a class="col-xs-3 icon icon-knight" href> <span class="hidden-xs hidden-sm">Knight</span><a>
+            <a class="col-xs-3 icon icon-rook" href> <span class="hidden-xs hidden-sm">Rook</span><a>
+        </nav>
+    </div>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="//cdnjs.cloudflare.com/ajax.libs.lodash,js.2.4.1/lodash.men.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <script>
-        jQuery('h2').on('click', function(event) {
-            console.log('arguments to "click" handler:'', arguments);
-            console.log('this inside "click" handler:'', article);
-            event.preventDefault();
-        });
-
-        jQuery('h2').each(function(index, h2)) {
-            h2.onclick = function(event) {
-                event.preventDefault();
-            }
-        });
-
-        _.forEach(document.querySelectorAll('h2'), function() {
-            h2.onclick = function () {
-                event.preventDefault();
-                var class = h2.className.split(' ');
-                console.log(arguments);
-
-                if ( classes.indexof == 'open') > -1 {
-                        //remove open from classes
-                        //turn classes back into a string
-                        //assign to h2.className
-                    
-                    h2.classList; //googel: mdn/API/event
-                } else {
-                    //open it
-                    console.log('open it')
-                    h2.className ='open';
-                }
-            }
-        });
-
-        </script>
-
-        <script>
-
-        document.write("Hello World!")
-        
-        </script>
-        
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
